@@ -12,12 +12,11 @@ def xor_strings(s, t) -> bytes:
     return bytes([a ^ b for a, b in zip(s, t)])
 
 MESSAGE = 'test'
-print('message:', MESSAGE)
-
 key = gkey(len(MESSAGE))
-print('key:', key)
-
 CIPHER = xor_strings(MESSAGE.encode('utf8'), key)
+
+print('message:', MESSAGE)
+print('key:', key)
 print('cipher:', CIPHER)
 print('decrypted:', xor_strings(CIPHER, key).decode('utf8'))
 
