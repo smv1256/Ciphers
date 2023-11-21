@@ -1,4 +1,5 @@
 # yo I did it
+# I'll make it better at some point
 # see I was lazy and then I needed a Ceasar decrypter for CyberStart
 # ngl I would feel mildly fancy if this weren't Python
 # but there's a built-in Python IDE you need to use rip lol
