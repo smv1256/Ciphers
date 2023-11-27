@@ -1,12 +1,11 @@
-"""module for string size random bytes"""
 from os import urandom
 
 def gkey(length: int) -> bytes:
-    """generate key"""
+    # generate key
     return urandom(length)
 
 def xor_strings(s, t) -> bytes:
-    """concatenate xor strings"""
+    # concatenate xor strings
     if isinstance(s, str):
         return "".join(chr(ord(a) ^ b) for a, b in zip(s, t)).encode("utf8")
     return bytes([a ^ b for a, b in zip(s, t)])
